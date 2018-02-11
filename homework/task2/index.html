@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="css/style-done.css">
 </head>
 <body>
 	<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam enim officia magnam nostrum, quis ipsam.</h1>
@@ -82,5 +81,37 @@
 		</p>
 	</section>
 
+	<section>
+		<ul class='background' data-color='gray'>
+
+			<!-- red -->
+
+			<li>item 1</li>
+
+			<!-- orange -->
+
+			<span> I am not a &lt li &gt tag !!!</span>
+
+			<li>item 2</li>
+
+			<!-- red -->
+
+			<!-- cyan -->
+
+			<li>item 3</li>
+
+		</ul>
+	</section>
+
+	<script src="script.js"></script>
+	<script>
+
+		console.log(document.querySelectorAll('ul.background')[0].parentNode);
+        replaceElements('ul.background', 'ol', [
+            { key: 'type', value: 'a' },
+            { key: 'style', value: 'border: 1px dashed red; padding: 15px 35px;' }
+        ]);
+
+	</script>
 </body>
 </html>
